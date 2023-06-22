@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom"
 import { useState } from "react"
 import { format } from "date-fns"
 import { DateRange } from "react-date-range"
+import HotelCard from "../../components/hotelCard/HotelCard"
 
 const Hotels = () => {
     // #region : grabbing
@@ -90,7 +91,9 @@ const Hotels = () => {
 
 
                     {/* results box */}
-                    <div className="results"></div>
+                    <div className="results">
+                        <HotelCard />
+                    </div>
                 </div>
             </div>
         </div>

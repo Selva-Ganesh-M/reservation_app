@@ -1,0 +1,102 @@
+.hcsearchItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #777;
+  height: 250px;
+}
+
+.hcsiImg {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+  flex: 1;
+}
+
+.hcsiDesc {
+  height: 100%;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hcsiTitle {
+  font-size: 20px;
+}
+
+.hcsiSubtitle {
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+}
+
+.hcsiDistance {
+  font-size: 14px;
+}
+
+.hcsiTaxiOp {
+  background-color: green;
+  color: white;
+  display: flex;
+  width: max-content;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.hcsiCancelOpSubtitle {
+  font-size: 12px;
+}
+
+.hcsiCancelOp {
+  color: green;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hcsiDetails {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hcsiRating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hcsiRating > button {
+  background-color: green;
+  color: white;
+  padding: 2px;
+}
+
+.hcsiDetailTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5px;
+}
+
+.hcsiPrice {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.hcsiTaxOp {
+  font-size: 12px;
+}
+.hcsiCheckButton {
+  width: 100%;
+  background-color: #0071c2;
+  color: white;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
