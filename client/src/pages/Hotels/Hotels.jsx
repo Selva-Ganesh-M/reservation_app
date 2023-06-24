@@ -93,6 +93,11 @@ const Hotels = () => {
                     {/* results box */}
                     <div className="results">
                         <HotelCard />
+                        <HotelCard />
+                        <HotelCard />
+                        <HotelCard />
+                        <HotelCard />
+                        <HotelCard />
                     </div>
                 </div>
             </div>

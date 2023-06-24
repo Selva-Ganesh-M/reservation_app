@@ -25,13 +25,18 @@
 }
 
 .hcsiTitle {
-  font-size: 20px;
+  font-size: 22px;
+  color: #0071c2;
 }
 
 .hcsiSubtitle {
   font-weight: bold;
   color: black;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.hcsiFeatures {
+  font-size: 12px;
 }
 
 .hcsiDistance {
