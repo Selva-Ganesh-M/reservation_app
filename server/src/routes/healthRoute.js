@@ -1,8 +1,12 @@
 import express from "express"
-import { healthController } from "../controllers/healthController.js";
+import { getHealth, helpRedirect } from "../controllers/healthController.js"
 
 const router = express.Router();
 
-router.get("/api/healthz", healthController)
+router.get("/api/healthz", getHealth)
+
+router.get("/", helpRedirect)
+
+
 
 export const healthRouter = router;
