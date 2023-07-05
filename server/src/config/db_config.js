@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, { disconnect } from "mongoose";
 import { MONGO_URL } from "./env_config.js";
 
 export const connectToDb = async () => {
@@ -9,3 +9,11 @@ export const connectToDb = async () => {
         throw error;
     }
 }
+
+mongoose.connection.on("disconnected", () => {
+    console.log("connection is disconnected");
+})
+
+mongoose.connection.on("connected", () => {
+    console.log("mongoDB connected");
+})

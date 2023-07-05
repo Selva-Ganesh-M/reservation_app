@@ -4,6 +4,7 @@ import { PORT } from "./src/config/env_config.js"
 import { healthRouter } from "./src/routes/healthRoute.js";
 import { customReqLogger } from "./src/middleware/customReqLogger.js";
 import { connectToDb } from "./src/config/db_config.js"
+import customErrorHandler from "./src/middleware/customErrorHandler.js";
 
 const server = express();
 
@@ -12,6 +13,12 @@ server.use(express.json())
 server.use(customReqLogger)
 
 server.use("/", healthRouter);
+
+
+
+
+
+server.use(customErrorHandler)
 
 const startServer = async () => {
     try {
